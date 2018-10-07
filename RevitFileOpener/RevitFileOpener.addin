@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>RevitFileOpener</Text>
+    <Description>RevitFileOpener</Description>
+    <Assembly>C:\Temp\RevitFileOpener.dll</Assembly>
+    <FullClassName>RevitFileOpener.Command</FullClassName>
+    <ClientId>d8a978f9-e3a5-461d-a222-ad2d62302afc</ClientId>
+    <VendorId>FOSS</VendorId>
+    <VendorDescription>FOSS</VendorDescription>
+  </AddIn>
+</RevitAddIns>
