@@ -20,7 +20,7 @@ namespace RevitFileOpener
   public class Command : IExternalCommand
   {
 
-    public string prefix = "pre_";
+    public string prefix = "pre__";
 
     public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
     {
