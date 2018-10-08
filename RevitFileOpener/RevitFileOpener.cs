@@ -20,7 +20,7 @@ namespace RevitFileOpener
   public class Command : IExternalCommand
   {
 
-    public string prefix = "pre__";
+    public string prefix = "your_prefix";
 
     public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
     {
@@ -52,7 +52,7 @@ namespace RevitFileOpener
 
       if (uiapp.ActiveUIDocument == null)
       {
-        TaskDialog.Show("Revit", "Please open a file, any file.");
+        TaskDialog.Show("Revit", "Please open a file, any file, for this Addin work.");
         return;
       }
       Document origDoc = uiapp.ActiveUIDocument.Document;
@@ -75,7 +75,7 @@ namespace RevitFileOpener
       {
         if (vname.StartsWith(prefix))
         {
-          TaskDialog.Show("Revit", "The active view is \"" + prefix + "\", cannot continue.");
+          TaskDialog.Show("Revit", "The active view contains \"" + prefix + "\", cannot continue.");
         }
       }
 
